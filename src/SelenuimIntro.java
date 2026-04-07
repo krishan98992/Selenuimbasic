@@ -26,7 +26,7 @@ public class SelenuimIntro {
 
 		         options.addArguments("--remote-allow-origins=*");
 
-	System.setProperty("webdriver.chrome.driver", "I:\\Eclipse 2026\\Chromedriver\\chromedriver.exe");
+//	System.setProperty("webdriver.chrome.driver", "I:\\Eclipse 2026\\Chromedriver\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver(options);
 
