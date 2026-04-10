@@ -22,12 +22,16 @@ public class Actiondemo2 {
 		WebElement move=driver.findElement(By.cssSelector("div[id='nav-link-accountList']"));
         Actions action=new Actions(driver);
         //to specific element
-        action.moveToElement(move).build().perform();
-        
+      
 		action.moveToElement(driver.findElement(By.cssSelector("input[id='twotabsearchtextbox']"))).click().keyDown(Keys.SHIFT).doubleClick().sendKeys("mobile").build().perform();
-		/*cancetting action . composite action
+		//selecting the word "mobile" in capital letter and then double click of mouse to 
+		/*cancatting action . composite action
 		 */
-		
+		  action.moveToElement(move).build().perform();
+		  
+		  /*want to right click on above element */
+		  action.moveToElement(move).contextClick().build().perform();
+	        
 
 	}
 
